@@ -15,9 +15,14 @@ let
     keepassxc
     lxappearance
     maven
+    mpdas
     neofetch
+    ncmpcpp
+    nicotine-plus
     playerctl
     pinentry
+    protonvpn-cli
+    protonvpn-gui
     rhythmbox
     scrot
     signal-desktop
@@ -59,12 +64,14 @@ in
   };
 
   imports = [
-    ./programs/alacritty/default.nix
     ./programs/emacs/default.nix
     ./programs/fish/default.nix
+    ./programs/ncmpcpp/default.nix
     ./programs/rofi/default.nix
     ./programs/xmonad/default.nix
+    ./programs/alacritty/default.nix
 
     ./services/polybar/default.nix
+    ./services/mpd/default.nix
   ];
 }
